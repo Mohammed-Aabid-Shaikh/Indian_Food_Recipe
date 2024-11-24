@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Img/chef2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/recipe.css">
+    <title>Pav Bhaji - Indian Food</title>    
+</head>
+<body>
+    <header>
+        <nav class="container">
+            
+            <div class="logo">
+                <img width="60px"  src="../../Img/chef2.png" alt="Indian food">
+                <span>Indian food</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="nav-item">Home</a></li>
+                <li class="dropdown">
+                    <a href="#recipes" class="nav-item">Recipes</a>
+                    <div class="dropdown-content">
+                        <a href="../../vegetarian/vegetarian.html">Vegetarian</a>
+                        <a href="../../Non_Vegetarian/non_vegetarian.html">Non-Vegetarian</a>
+                        <a href="../../Desserts/desserts.html">Desserts</a>
+                        <a href="../../Snacks/snacks.html">Snacks</a>
+                    </div>
+                </li>
+                <li><a href="../../AboutUs.html" class="nav-item">About</a></li>
+                <li><a href="../../contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="recipe-card">
+            <img src="../../Img/veg/pav_bhaji.jpg" alt="Pav Bhaji" class="recipe-image">
+            <div class="recipe-content">
+                <h1 class="recipe-title">Pav Bhaji</h1>
+                <div class="recipe-meta">
+                    <span>Prep Time: 31 mins</span>
+                    <span>Cook Time: 26 mins</span>
+                    <span>Total Time: 57 mins</span>
+                </div>
+                <p class="recipe-description">A delicious and wholesome mix of veggies like potatoes, tomatoes, cauliflower, green peas and capsicum cooked with onions, ginger and garlic, mashed on a griddle and seasoned with pav bhaji masala and butter.</p>
+                
+                <div class="recipe-section">
+                    <h2>Ingredients</h2>
+                    <!-- <div id="servings-control">
+                        <button id="decrease-servings">-</button>
+                        <span id="servings-display">4 servings</span>
+                        <button id="increase-servings">+</button>
+                    </div> -->
+                    <ul class="ingredients-list" id="ingredients-list">
+                        <li><span class="quantity"></span>8 Pavs</li>
+                        <li><span class="quantity"></span>2 cups Potatoes boiled and mashed</li>
+                        <li><span class="quantity"></span>3 tablespoons Cauliflower grated</li>
+                        <li><span class="quantity"></span>1/4 cup Capsicum finely chopped</li>
+                        <li><span class="quantity"></span>3 tablespoons Oil</li>
+                        <li><span class="quantity"></span>1 cup Onions chopped</li>
+                        <li><span class="quantity"></span>1 1/2 teaspoons Ginger-garlic paste</li>
+                        <li><span class="quantity"></span>1 cúp Tomato puree fresh</li>
+                        <li><span class="quantity"></span>1/4 cup Readymade tomato puree</li>
+                        <li><span class="quantity"></span>to taste Salt</li>
+                        <li><span class="quantity"></span>1 1/2 tablespoons Pav bhaji masala</li>
+                        <li><span class="quantity"></span>1/2 teaspoon Red chilli powder</li>
+                        <li><span class="quantity"></span>2 teaspoons Lemon juice</li>
+                        <li><span class="quantity"></span>2 tablespoons Butter</li>
+                        <li><span class="quantity"></span>A few sprigs fresh coriander leaves</li>
+                        <li><span class="quantity"></span>A lemon slice</li>
+                    </ul>
+                </div>
+
+                <div class="recipe-section">
+                    <h2>Instructions</h2>
+                    <ol class="instructions-list">
+                        <li>Heat oil in a non-stick pan, add ½ cup chopped onions and saute. When they turn golden add ginger-garlic paste and saute.</li>
+                        <li>Add cauliflower and saute. Add mashed potatoes and mix. Add fresh tomato puree and ready made tomato puree and mix well. Add ½ cup water and mix and cook for 3-4 minutes.</li>
+                        <li>Add green capsicum and mix well. Cover and cook for 3-4 minutes.</li>
+                        <li>Add red chilli powder and lemon juice and mix. Add butter and mix.</li>
+                        <li>Chop coriander leaves and mix.</li>
+                        <li>Transfer into a serving bowl, garnish with remaining onion and a lemon slice and serve hot with pavs.</li>
+                    </ol>
+                </div>
+
+                <div class="recipe-section">
+                    <h2>Nutrition Information</h2>
+                    <div class="nutrition-info">
+                        <div class="nutrition-item">
+                            <p>Calories</p>
+                            <span>1913</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Protein</p>
+                            <span>35.9</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Carbohydrates</p>
+                            <span>279.7</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Fat</p>
+                            <span>72.3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="btn" onclick="goBack()" id="print-recipe">Go Back</button>
+                    <button class="btn" onclick="printPage()" id="print-recipe">Print Recipe</button>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Indian Delights. All rights reserved.</p>
+            <div class="social-icon">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for adjusting servings
+        const decreaseBtn = document.getElementById('decrease-servings');
+        const increaseBtn = document.getElementById('increase-servings');
+        const servingsDisplay = document.getElementById('servings-display');
+        const ingredientsList = document.getElementById('ingredients-list');
+        let servings = 4;
+
+        // Function to print the page
+        function printPage() {
+            window.print();
+        }
+
+        // Function to navigate back
+        function goBack() {
+            window.history.back();
+        }
+
+        // Print recipe functionality
+        document.getElementsById('print-recipe').addEventListener('click', () => {
+            window.print();
+        });
+
+        function updateServings(change) {
+            servings += change;
+            if (servings < 1) servings = 1;
+            servingsDisplay.textContent = `${servings} servings`;
+            updateIngredients();
+        }
+
+        function updateIngredients() {
+            const quantities = ingredientsList.querySelectorAll('.quantity');
+            quantities.forEach(quantity => {
+                const originalValue = parseFloat(quantity.getAttribute('data-original'));
+                const newValue = (originalValue * servings / 4).toFixed(2);
+                quantity.textContent = newValue % 1 === 0 ? Math.floor(newValue) : newValue;
+            });
+        }
+
+        decreaseBtn.addEventListener('click', () => updateServings(-1));
+        increaseBtn.addEventListener('click', () => updateServings(1));
+
+        // Store original ingredient quantities
+        document.querySelectorAll('.quantity').forEach(quantity => {
+            quantity.setAttribute('data-original', parseFloat(quantity.textContent));
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

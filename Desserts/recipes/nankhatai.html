@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Img/chef2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/recipe.css">
+    <title>Nankhatai - Indian Dessert</title>
+    
+</head>
+<body>
+    <header>
+        <nav class="container">
+            
+            <div class="logo">
+                <img width="60px"  src="../../Img/chef2.png" alt="Indian food">
+                <span>Indian food</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="nav-item">Home</a></li>
+                <li class="dropdown">
+                    <a href="#recipes" class="nav-item">Recipes</a>
+                    <div class="dropdown-content">
+                        <a href="../../vegetarian/vegetarian.html">Vegetarian</a>
+                        <a href="../../Non_Vegetarian/non_vegetarian.html">Non-Vegetarian</a>
+                        <a href="../../Desserts/desserts.html">Desserts</a>
+                        <a href="../../Snacks/snacks.html">Snacks</a>
+                    </div>
+                </li>
+                <li><a href="../../AboutUs.html" class="nav-item">About</a></li>
+                <li><a href="../../contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="recipe-card">
+            <img src="../../Img/Desserts/nankhatai.jpg" alt="Nankhatai" class="recipe-image">
+            <div class="recipe-content">
+                <h1 class="recipe-title">Nankhatai</h1>
+                <div class="recipe-meta">
+                    <span>Prep Time: 15 mins</span>
+                    <span>Cook Time: 20 mins</span>
+                    <span>Total Time: 35 mins</span>
+                </div>
+                <p class="recipe-description">Nankhatai is a traditional Indian shortbread cookie that is crumbly, buttery, and melts in your mouth. It's a perfect tea-time snack and a festive favorite.</p>
+                
+                <div class="recipe-section">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list" id="ingredients-list">
+                        <li>1 cup all-purpose flour (maida)</li>
+                        <li>1/2 cup gram flour (besan)</li>
+                        <li>1/4 cup semolina (rava)</li>
+                        <li>1/2 cup powdered sugar</li>
+                        <li>1/2 cup ghee (clarified butter)</li>
+                        <li>1/2 teaspoon cardamom powder</li>
+                        <li>1/4 teaspoon baking soda</li>
+                        <li>Chopped pistachios and almonds for garnish</li>
+                    </ul>
+                </div>
+                
+                <div class="recipe-section">
+                    <h2>Instructions</h2>
+                    <ol class="instructions-list">
+                        <li>Preheat the oven to 180°C (350°F) and line a baking tray with parchment paper.</li>
+                        <li>In a bowl, sift together all-purpose flour, gram flour, semolina, and baking soda.</li>
+                        <li>Add powdered sugar and cardamom powder to the dry ingredients and mix well.</li>
+                        <li>Gradually add ghee and mix to form a smooth dough. Do not over-knead.</li>
+                        <li>Divide the dough into small portions and roll them into balls. Flatten slightly.</li>
+                        <li>Place the dough balls on the baking tray and garnish with chopped pistachios and almonds.</li>
+                        <li>Bake for 18-20 minutes, or until the edges turn light golden brown.</li>
+                        <li>Remove from the oven and let them cool completely before serving or storing.</li>
+                    </ol>
+                </div>
+
+                <div class="recipe-section">
+                    <h2>Nutrition Information</h2>
+                    <div class="nutrition-info">
+                        <div class="nutrition-item">
+                            <p>Calories</p>
+                            <span>150 kcal</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Protein</p>
+                            <span>3g</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Carbohydrates</p>
+                            <span>18g</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Fat</p>
+                            <span>7g</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="btn" onclick="goBack()">Go Back</button>
+                    <button class="btn" onclick="printPage()">Print Recipe</button>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Indian Food. All rights reserved.</p>
+        <div class="social-icon">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+        </div>
+    </footer>
+
+    <script>
+        function printPage() {
+            window.print();
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

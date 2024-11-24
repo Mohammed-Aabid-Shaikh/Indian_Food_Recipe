@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Img/chef2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/recipe.css">
+    <title>Paneer Butter Masala - Indian Food</title>
+    
+</head>
+<body>
+    <header>
+        <nav class="container">
+            
+            <div class="logo">
+                <img width="60px"  src="../../Img/chef2.png" alt="Indian food">
+                <span>Indian food</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="nav-item">Home</a></li>
+                <li class="dropdown">
+                    <a href="#recipes" class="nav-item">Recipes</a>
+                    <div class="dropdown-content">
+                        <a href="../../vegetarian/vegetarian.html">Vegetarian</a>
+                        <a href="../../Non_Vegetarian/non_vegetarian.html">Non-Vegetarian</a>
+                        <a href="../../Desserts/desserts.html">Desserts</a>
+                        <a href="../../Snacks/snacks.html">Snacks</a>
+                    </div>
+                </li>
+                <li><a href="../../AboutUs.html" class="nav-item">About</a></li>
+                <li><a href="../../contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="recipe-card">
+            <img src="../../Img/veg/paneer_butter_masala.jpg" alt="Paneer Butter Masala" class="recipe-image">
+            <div class="recipe-content">
+                <h1 class="recipe-title">Paneer Butter Masala</h1>
+                <div class="recipe-meta">
+                    <span>Prep Time: 15 mins</span>
+                    <span>Cook Time: 30 mins</span>
+                    <span>Total Time: 45 mins</span>
+                </div>
+                <p class="recipe-description">Palak paneer recipe - Indian cottage cheese simmered in onion tomato spinach gravy. This palak paneer is one of the best you can make at home. Tastes simply delicious, creamy and easy to make. Serve with roti, basmati rice or naan.</p>
+                
+                <div class="recipe-section">
+                    <h2>Ingredients</h2>
+                    <!-- <div id="servings-control">
+                        <button id="decrease-servings">-</button>
+                        <span id="servings-display">4 servings</span>
+                        <button id="increase-servings">+</button>
+                    </div> -->
+                    <ul class="ingredients-list" id="ingredients-list">
+                        <li><span class="quantity">500 grams</span> paneer (cottage cheese), cut into triangles</li>
+                        <li><span class="quantity">5 tablespoons</span> butter</li>
+                        <li><span class="quantity">1 teaspoon</span> oil</li>
+                        <li><span class="quantity">2</span> bay leaves</li>
+                        <li><span class="quantity">2</span> cloves</li>
+                        <li><span class="quantity">2 one-inch</span> cinnamon sticks.</li>
+                        <li><span class="quantity">2 dried</span> red chillies, broken</li>
+                        <li><span class="quantity">2 tablespoons</span> crushed coriander seeds</li>
+                        <li><span class="quantity">1 medium</span> onion, sliced</li>
+                        <li><span class="quantity">2 teaspoons</span> ginger paste</li>
+                        <li><span class="quantity">2 teaspoons</span> garlic paste</li>
+                        <li><span class="quantity">1 teaspoon</span> coriander powder</li>
+                        <li><span class="quantity">1 teaspoon</span> red chilli powder</li>
+                        <li><span class="quantity">5-6 medium</span> tomatoes, chopped</li>
+                        <li><span class="quantity"></span> Salt to taste</li>
+                        <li><span class="quantity">1½ teaspoon</span> crushed Kasoori methi</li>
+                        <li><span class="quantity">2 tablespoons</span> fresh cream</li>
+                        <li><span class="quantity"></span>Coriander sprig for garnish</li>
+                    </ul>
+                </div>
+
+                <div class="recipe-section">
+                    <h2>Instructions</h2>
+                    <ol class="instructions-list">
+                        <li>Heat three tablespoons butter with one teaspoon oil in a kadai. Add bay leaves, cloves, cinnamon, red chillies and half of the crushed coriander seeds. Sauté for half a minute.</li>
+                        <li>Add onion and stir-fry for thirty seconds and add ginger paste and garlic paste. Cook for another thirty seconds. Add coriander powder, red chilli powder and tomatoes. Cook on high heat till oil leaves the masala. Puree the mixture.</li>
+                        <li>Heat the remaining butter in a non-stick, cook the pureed mixture for two minutes. Add paneer pieces and salt. Add ½ cup of water. Cook covered on low heat for five minutes.</li>
+                        <li>Sprinkle kasoori methi and mix in lightly. Remove from heat and mix in cream. Serve hot, garnished with coriander sprig.</li>
+                    </ol>
+                </div>
+
+                <div class="recipe-section">
+                    <h2>Nutrition Information</h2>
+                    <div class="nutrition-info">
+                        <div class="nutrition-item">
+                            <p>Calories</p>
+                            <span>2233</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Protein</p>
+                            <span>102.2</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Carbohydrates</p>
+                            <span>45.1</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Fat</p>
+                            <span>182.6</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="btn" onclick="goBack()" id="print-recipe">Go Back</button>
+                    <button class="btn" onclick="printPage()" id="print-recipe">Print Recipe</button>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Indian Delights. All rights reserved.</p>
+            <div class="social-icon">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for adjusting servings
+        const decreaseBtn = document.getElementById('decrease-servings');
+        const increaseBtn = document.getElementById('increase-servings');
+        const servingsDisplay = document.getElementById('servings-display');
+        const ingredientsList = document.getElementById('ingredients-list');
+        let servings = 4;
+
+        // Function to print the page
+        function printPage() {
+            window.print();
+        }
+
+        // Function to navigate back
+        function goBack() {
+            window.history.back();
+        }
+
+        // Print recipe functionality
+        document.getElementsById('print-recipe').addEventListener('click', () => {
+            window.print();
+        });
+
+        function updateServings(change) {
+            servings += change;
+            if (servings < 1) servings = 1;
+            servingsDisplay.textContent = `${servings} servings`;
+            updateIngredients();
+        }
+
+        function updateIngredients() {
+            const quantities = ingredientsList.querySelectorAll('.quantity');
+            quantities.forEach(quantity => {
+                const originalValue = parseFloat(quantity.getAttribute('data-original'));
+                const newValue = (originalValue * servings / 4).toFixed(2);
+                quantity.textContent = newValue % 1 === 0 ? Math.floor(newValue) : newValue;
+            });
+        }
+
+        decreaseBtn.addEventListener('click', () => updateServings(-1));
+        increaseBtn.addEventListener('click', () => updateServings(1));
+
+        // Store original ingredient quantities
+        document.querySelectorAll('.quantity').forEach(quantity => {
+            quantity.setAttribute('data-original', parseFloat(quantity.textContent));
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

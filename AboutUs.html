@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Img/chef2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Indian Food - About Us</title>
+    <style>
+        .hero
+        {
+            background-image: url('./Img/Indian_food.jpg');
+        }
+    </style>
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        :root {
+            --primary-color: #e63946;
+            --secondary-color: #f1faee;
+            --accent-color: #a8dadc;
+            --text-color: #1d3557;
+            --background-color: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+            position: relative;
+        }
+
+        .nav-links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: var(--primary-color);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: var(--secondary-color);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #c1121f;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .hero {
+            background-image: url('Img/Indian_food.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--secondary-color);
+            position: relative;
+            margin-top: 6%;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #c1121f;
+        }
+
+        .categories {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .category-card {
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .category-content {
+            padding: 1rem;
+        }
+
+        .category-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .featured-recipes {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .recipes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .recipe-card {
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .recipe-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .recipe-content {
+            padding: 1rem;
+        }
+
+        .recipe-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .recipe-description {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .spice-meter {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .spice-meter span {
+            margin-right: 0.5rem;
+        }
+
+        .spice-icon {
+            width: 20px;
+            height: 20px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            margin-right: 2px;
+        }
+
+        .about-section, .contact-section, .recipe-section, .category-section {
+            padding: 4rem 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .about-content, .contact-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .about-text, .contact-form {
+            flex: 1;
+        }
+
+        .about-image, .contact-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .about-image img, .contact-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        .recipe-details {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+
+        .recipe-image {
+            flex: 1;
+        }
+
+        .recipe-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-info {
+            flex: 2;
+        }
+
+        .ingredients-list, .instructions-list {
+            list-style-position: inside;
+            padding-left: 1rem;
+        }
+
+        .cta-section {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .cta-content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        #newsletter-btn
+        {
+            display: inline-block;
+            background-color: #01285f;
+            color: var(--secondary-color);
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #newsletter-btn:hover {
+            background-color: #253f65;
+        }
+
+        footer {
+            background-color: var(--text-color);
+            color: var(--secondary-color);
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .about-content, .contact-content, .recipe-details {
+                flex-direction: column;
+            }
+
+            .about-image, .contact-image {
+                order: -1;
+            }
+        }
+        .social-icon
+        {
+            font-size: xx-large;
+            display: flex;
+            justify-content: center;
+        }
+        .social-icon i 
+        {
+            margin: 0 1rem;
+        }
+    </style> -->
+</head>
+<body>
+    <header>
+        <nav class="container">
+            
+            <div class="logo">
+                <img width="60px"  src="./Img/chef2.png" alt="Indian food">
+                <span>Indian food</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html" class="nav-item">Home</a></li>
+                <li class="dropdown">
+                    <a href="#recipes" class="nav-item">Recipes</a>
+                    <div class="dropdown-content">
+                        <a href="./vegetarian/vegetarian.html">Vegetarian</a>
+                        <a href="./Non_Vegetarian/non_vegetarian.html">Non-Vegetarian</a>
+                        <a href="./Desserts/desserts.html">Desserts</a>
+                        <a href="./Snacks/snacks.html">Snacks</a>
+                    </div>
+                </li>
+                <li><a href="./AboutUs.html" class="nav-item">About</a></li>
+                <li><a href="./contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>About Indian Food</h1>
+            </div>
+        </div>
+
+        <section id="about" class="page about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Welcome to Indian Food, your gateway to the vibrant and diverse world of Indian cuisine. Our passion is to bring the authentic flavors of India right to your kitchen, no matter where you are in the world.</p>
+                        <p>Founded by a team of food enthusiasts and experienced chefs, Indian Food aims to demystify Indian cooking and make it accessible to everyone. We believe that the rich tapestry of Indian flavors, aromas, and cooking techniques should be shared and celebrated globally.</p>
+                        <p>Our carefully curated recipes range from classic dishes passed down through generations to modern interpretations of Indian cuisine. Whether you're a novice cook or an experienced chef, our step-by-step guides and tips will help you create mouthwatering Indian dishes with confidence.</p>
+                        <p>Join us on this culinary journey and discover the magic of Indian spices, the comfort of homestyle cooking, and the joy of sharing delicious meals with loved ones.</p>
+                    </div>
+                    <div class="about-image">
+                        <img style="margin: 0; padding: 0;" width="75%" src="./Img/fun_ads.jpg" alt="Indian Food">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Join Our Culinary Community</h2>
+                    <p>Sign up for our newsletter to receive the latest recipes, cooking tips, and exclusive content.</p>
+                    <a href="./contact.html" class="btn" id="newsletter-btn">Subscribe Now</a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Indian food. All rights reserved.</p>
+            <div class="social-icon">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for smooth scrolling and page navigation
+        
+
+        // JavaScript for parallax effect on hero section
+        window.addEventListener('scroll', function() {
+            const parallax = document.querySelector('.hero');
+            let scrollPosition = window.pageYOffset;
+            parallax.style.backgroundPositionY = scrollPosition * 0.7 + 'px';
+        });
+
+        // JavaScript for recipe card hover effect
+        
+
+        // JavaScript for form submission
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message. We will get back to you soon!');
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>

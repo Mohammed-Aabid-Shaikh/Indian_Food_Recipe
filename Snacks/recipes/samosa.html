@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Img/chef2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/recipe.css">
+    <title>Samosa - Indian Snack</title>
+    
+</head>
+<body>
+    <header>
+        <nav class="container">
+            
+            <div class="logo">
+                <img width="60px"  src="../../Img/chef2.png" alt="Indian food">
+                <span>Indian food</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="nav-item">Home</a></li>
+                <li class="dropdown">
+                    <a href="#recipes" class="nav-item">Recipes</a>
+                    <div class="dropdown-content">
+                        <a href="../../vegetarian/vegetarian.html">Vegetarian</a>
+                        <a href="../../Non_Vegetarian/non_vegetarian.html">Non-Vegetarian</a>
+                        <a href="../../Desserts/desserts.html">Desserts</a>
+                        <a href="../../Snacks/snacks.html">Snacks</a>
+                    </div>
+                </li>
+                <li><a href="../../AboutUs.html" class="nav-item">About</a></li>
+                <li><a href="../../contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="recipe-card">
+            <img src="../../Img/Snacks/samosa.jpg" alt="Samosa" class="recipe-image">
+            <div class="recipe-content">
+                <h1 class="recipe-title">Samosa</h1>
+                <div class="recipe-meta">
+                    <span>Prep Time: 30 mins</span>
+                    <span>Cook Time: 20 mins</span>
+                    <span>Total Time: 50 mins</span>
+                </div>
+                <p class="recipe-description">Samosa is a popular Indian snack consisting of a crispy pastry filled with spiced potatoes and peas. It's a favorite treat at tea-time or festive gatherings.</p>
+                
+                <div class="recipe-section">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list" id="ingredients-list">
+                        <li>2 cups all-purpose flour</li>
+                        <li>1/4 cup oil</li>
+                        <li>1/2 cup water</li>
+                        <li>2 large potatoes (boiled and mashed)</li>
+                        <li>1/2 cup green peas</li>
+                        <li>1 teaspoon cumin seeds</li>
+                        <li>1/2 teaspoon turmeric powder</li>
+                        <li>1 teaspoon garam masala</li>
+                        <li>1/2 teaspoon red chili powder</li>
+                        <li>Salt to taste</li>
+                        <li>Oil for frying</li>
+                    </ul>
+                </div>
+                
+                <div class="recipe-section">
+                    <h2>Instructions</h2>
+                    <ol class="instructions-list">
+                        <li>Prepare the dough by mixing flour, oil, and water until a firm dough forms. Cover and set aside.</li>
+                        <li>In a pan, heat oil and add cumin seeds. Once aromatic, add boiled potatoes and peas.</li>
+                        <li>Add turmeric powder, garam masala, red chili powder, and salt. Mix well and let the filling cool.</li>
+                        <li>Divide the dough into small portions. Roll out each portion into a circle, cut into halves, and shape into cones.</li>
+                        <li>Fill the cones with the potato mixture, seal the edges with water, and form triangles.</li>
+                        <li>Heat oil in a deep pan and fry the samosas until golden brown. Serve hot with chutney.</li>
+                    </ol>
+                </div>
+
+                <div class="recipe-section">
+                    <h2>Nutrition Information</h2>
+                    <div class="nutrition-info">
+                        <div class="nutrition-item">
+                            <p>Calories</p>
+                            <span>200 kcal</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Protein</p>
+                            <span>4g</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Carbohydrates</p>
+                            <span>30g</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Fat</p>
+                            <span>8g</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="btn" onclick="goBack()">Go Back</button>
+                    <button class="btn" onclick="printPage()">Print Recipe</button>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Indian Food. All rights reserved.</p>
+        <div class="social-icon">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+        </div>
+    </footer>
+
+    <script>
+        function printPage() {
+            window.print();
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

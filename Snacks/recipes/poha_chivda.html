@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Img/chef2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/recipe.css">
+    <title>Poha Chivda - Indian Snack</title>
+    
+</head>
+<body>
+    <header>
+        <nav class="container">
+            
+            <div class="logo">
+                <img width="60px"  src="../../Img/chef2.png" alt="Indian food">
+                <span>Indian food</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="nav-item">Home</a></li>
+                <li class="dropdown">
+                    <a href="#recipes" class="nav-item">Recipes</a>
+                    <div class="dropdown-content">
+                        <a href="../../vegetarian/vegetarian.html">Vegetarian</a>
+                        <a href="../../Non_Vegetarian/non_vegetarian.html">Non-Vegetarian</a>
+                        <a href="../../Desserts/desserts.html">Desserts</a>
+                        <a href="../../Snacks/snacks.html">Snacks</a>
+                    </div>
+                </li>
+                <li><a href="../../AboutUs.html" class="nav-item">About</a></li>
+                <li><a href="../../contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="recipe-card">
+            <img src="../../Img/Snacks/poha_chivda.jpg" alt="Poha Chivda" class="recipe-image">
+            <div class="recipe-content">
+                <h1 class="recipe-title">Poha Chivda</h1>
+                <div class="recipe-meta">
+                    <span>Prep Time: 10 mins</span>
+                    <span>Cook Time: 10 mins</span>
+                    <span>Total Time: 20 mins</span>
+                </div>
+                <p class="recipe-description">Poha Chivda is a light and crispy Indian snack made with flattened rice, peanuts, and flavorful spices. It's perfect as a tea-time companion or a quick snack on the go.</p>
+                
+                <div class="recipe-section">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list" id="ingredients-list">
+                        <li>2 cups thin flattened rice (poha)</li>
+                        <li>1/4 cup peanuts</li>
+                        <li>1/4 cup roasted chana dal</li>
+                        <li>2 tablespoons oil</li>
+                        <li>1 teaspoon mustard seeds</li>
+                        <li>1/2 teaspoon turmeric powder</li>
+                        <li>1 sprig curry leaves</li>
+                        <li>2 green chilies, chopped</li>
+                        <li>1/2 teaspoon sugar</li>
+                        <li>Salt to taste</li>
+                    </ul>
+                </div>
+                
+                <div class="recipe-section">
+                    <h2>Instructions</h2>
+                    <ol class="instructions-list">
+                        <li>Dry roast the poha in a pan on low heat until crisp. Set aside.</li>
+                        <li>Heat oil in the same pan. Add mustard seeds and let them splutter.</li>
+                        <li>Add curry leaves, green chilies, and peanuts. Fry until the peanuts are golden brown.</li>
+                        <li>Add roasted chana dal and turmeric powder. Stir well.</li>
+                        <li>Mix in the roasted poha, sugar, and salt. Toss to coat evenly with the spices.</li>
+                        <li>Cool completely and store in an airtight container.</li>
+                    </ol>
+                </div>
+
+                <div class="recipe-section">
+                    <h2>Nutrition Information</h2>
+                    <div class="nutrition-info">
+                        <div class="nutrition-item">
+                            <p>Calories</p>
+                            <span>110 kcal</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Protein</p>
+                            <span>3g</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Carbohydrates</p>
+                            <span>15g</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Fat</p>
+                            <span>4g</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="btn" onclick="goBack()">Go Back</button>
+                    <button class="btn" onclick="printPage()">Print Recipe</button>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Indian Food. All rights reserved.</p>
+        <div class="social-icon">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+        </div>
+    </footer>
+
+    <script>
+        function printPage() {
+            window.print();
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

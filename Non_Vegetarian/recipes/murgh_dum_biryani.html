@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Img/chef2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/recipe.css">
+    <title>Murgh Dum Biryani - Indian Food</title>
+    
+</head>
+<body>
+    <header>
+        <nav class="container">
+            
+            <div class="logo">
+                <img width="60px"  src="../../Img/chef2.png" alt="Indian food">
+                <span>Indian food</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="nav-item">Home</a></li>
+                <li class="dropdown">
+                    <a href="#recipes" class="nav-item">Recipes</a>
+                    <div class="dropdown-content">
+                        <a href="../../vegetarian/vegetarian.html">Vegetarian</a>
+                        <a href="../../Non_Vegetarian/non_vegetarian.html">Non-Vegetarian</a>
+                        <a href="../../Desserts/desserts.html">Desserts</a>
+                        <a href="../../Snacks/snacks.html">Snacks</a>
+                    </div>
+                </li>
+                <li><a href="../../AboutUs.html" class="nav-item">About</a></li>
+                <li><a href="../../contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="recipe-card">
+            <img src="../../Img/Non_veg/murgh_dum_biryani.jpg" alt="Murgh Dum Biryani" class="recipe-image">
+            <div class="recipe-content">
+                <h1 class="recipe-title">Murgh Dum Biryani</h1>
+                <div class="recipe-meta">
+                    <span>Prep Time: 40 mins</span>
+                    <span>Cook Time: 1 hr</span>
+                    <span>Total Time: 1 hr 40 mins</span>
+                </div>
+                <p class="recipe-description">Murgh Dum Biryani is a classic Indian dish made with layers of fragrant basmati rice, tender chicken, and aromatic spices, all cooked together on a slow flame for a rich and flavorful experience.</p>
+                
+                <div class="recipe-section">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list" id="ingredients-list">
+                        <li>500 grams chicken (bone-in or boneless)</li>
+                        <li>2 cups basmati rice</li>
+                        <li>1 cup yogurt</li>
+                        <li>2 large onions (sliced and fried)</li>
+                        <li>3 tablespoons biryani masala</li>
+                        <li>1 teaspoon turmeric powder</li>
+                        <li>1 teaspoon red chili powder</li>
+                        <li>1/4 cup fresh coriander leaves (chopped)</li>
+                        <li>1/4 cup mint leaves (chopped)</li>
+                        <li>1/2 cup ghee</li>
+                        <li>2-3 saffron strands (soaked in warm milk)</li>
+                        <li>3 cups water (for rice)</li>
+                        <li>Salt to taste</li>
+                        <li>Whole spices (cloves, cardamom, cinnamon, bay leaf)</li>
+                    </ul>
+                </div>
+                
+                <div class="recipe-section">
+                    <h2>Instructions</h2>
+                    <ol class="instructions-list">
+                        <li>Marinate the chicken with yogurt, biryani masala, turmeric powder, red chili powder, and salt. Set aside for 30 minutes.</li>
+                        <li>Boil the basmati rice with whole spices and salt until 70% cooked. Drain and set aside.</li>
+                        <li>Heat ghee in a heavy-bottomed pot, add marinated chicken, and cook until partially done.</li>
+                        <li>Layer the chicken with cooked rice, fried onions, coriander, and mint leaves.</li>
+                        <li>Drizzle saffron milk and additional ghee on top of the rice layer.</li>
+                        <li>Cover the pot with a tight lid and cook on a low flame (dum) for 30-40 minutes.</li>
+                        <li>Mix gently before serving. Enjoy hot with raita or salad.</li>
+                    </ol>
+                </div>
+
+                <div class="recipe-section">
+                    <h2>Nutrition Information</h2>
+                    <div class="nutrition-info">
+                        <div class="nutrition-item">
+                            <p>Calories</p>
+                            <span>450 kcal</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Protein</p>
+                            <span>35g</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Carbohydrates</p>
+                            <span>50g</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Fat</p>
+                            <span>15g</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="btn" onclick="goBack()">Go Back</button>
+                    <button class="btn" onclick="printPage()">Print Recipe</button>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Indian Food. All rights reserved.</p>
+        <div class="social-icon">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+        </div>
+    </footer>
+
+    <script>
+        function printPage() {
+            window.print();
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

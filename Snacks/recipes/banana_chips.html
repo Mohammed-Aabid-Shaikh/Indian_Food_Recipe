@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Img/chef2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/recipe.css">
+    <title>Banana Chips - Indian Snack</title>
+    
+</head>
+<body>
+    <header>
+        <nav class="container">
+            
+            <div class="logo">
+                <img width="60px"  src="../../Img/chef2.png" alt="Indian food">
+                <span>Indian food</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="nav-item">Home</a></li>
+                <li class="dropdown">
+                    <a href="#recipes" class="nav-item">Recipes</a>
+                    <div class="dropdown-content">
+                        <a href="../../vegetarian/vegetarian.html">Vegetarian</a>
+                        <a href="../../Non_Vegetarian/non_vegetarian.html">Non-Vegetarian</a>
+                        <a href="../../Desserts/desserts.html">Desserts</a>
+                        <a href="../../Snacks/snacks.html">Snacks</a>
+                    </div>
+                </li>
+                <li><a href="../../AboutUs.html" class="nav-item">About</a></li>
+                <li><a href="../../contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="recipe-card">
+            <img src="../../Img/Snacks/banana_chips.jpg" alt="Banana Chips" class="recipe-image">
+            <div class="recipe-content">
+                <h1 class="recipe-title">Banana Chips</h1>
+                <div class="recipe-meta">
+                    <span>Prep Time: 15 mins</span>
+                    <span>Cook Time: 20 mins</span>
+                    <span>Total Time: 35 mins</span>
+                </div>
+                <p class="recipe-description">Banana chips are a crispy and savory snack made by deep frying thin slices of raw bananas, typically served as a snack in India or enjoyed during festivals.</p>
+                
+                <div class="recipe-section">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list" id="ingredients-list">
+                        <li>3 raw bananas</li>
+                        <li>1/4 cup coconut oil (for frying)</li>
+                        <li>1/2 teaspoon salt (or to taste)</li>
+                        <li>1/4 teaspoon black pepper powder (optional)</li>
+                        <li>1/4 teaspoon red chili powder (optional)</li>
+                        <li>1/2 teaspoon turmeric powder</li>
+                    </ul>
+                </div>
+                
+                <div class="recipe-section">
+                    <h2>Instructions</h2>
+                    <ol class="instructions-list">
+                        <li>Peel the raw bananas and slice them thinly using a mandoline slicer or knife.</li>
+                        <li>Soak the banana slices in water for about 5 minutes to prevent browning.</li>
+                        <li>Drain the water and pat the slices dry using a kitchen towel.</li>
+                        <li>Heat coconut oil in a deep frying pan over medium heat.</li>
+                        <li>Carefully drop the banana slices into the hot oil and fry in batches until golden and crispy.</li>
+                        <li>Remove the chips from the oil and drain on paper towels to remove excess oil.</li>
+                        <li>While the chips are still hot, sprinkle with salt, turmeric, and optional spices (black pepper and chili powder).</li>
+                        <li>Allow the chips to cool before serving. Store in an airtight container.</li>
+                    </ol>
+                </div>
+
+                <div class="recipe-section">
+                    <h2>Nutrition Information</h2>
+                    <div class="nutrition-info">
+                        <div class="nutrition-item">
+                            <p>Calories</p>
+                            <span>150 kcal</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Protein</p>
+                            <span>1g</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Carbohydrates</p>
+                            <span>35g</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Fat</p>
+                            <span>5g</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="btn" onclick="goBack()">Go Back</button>
+                    <button class="btn" onclick="printPage()">Print Recipe</button>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Indian Food. All rights reserved.</p>
+        <div class="social-icon">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+        </div>
+    </footer>
+
+    <script>
+        function printPage() {
+            window.print();
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

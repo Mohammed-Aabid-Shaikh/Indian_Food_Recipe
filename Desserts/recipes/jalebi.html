@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Img/chef2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/recipe.css">
+    <title>Jalebi - Indian Dessert</title>
+    
+</head>
+<body>
+    <header>
+        <nav class="container">
+            
+            <div class="logo">
+                <img width="60px"  src="../../Img/chef2.png" alt="Indian food">
+                <span>Indian food</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="nav-item">Home</a></li>
+                <li class="dropdown">
+                    <a href="#recipes" class="nav-item">Recipes</a>
+                    <div class="dropdown-content">
+                        <a href="../../vegetarian/vegetarian.html">Vegetarian</a>
+                        <a href="../../Non_Vegetarian/non_vegetarian.html">Non-Vegetarian</a>
+                        <a href="../../Desserts/desserts.html">Desserts</a>
+                        <a href="../../Snacks/snacks.html">Snacks</a>
+                    </div>
+                </li>
+                <li><a href="../../AboutUs.html" class="nav-item">About</a></li>
+                <li><a href="../../contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="recipe-card">
+            <img src="../../Img/Desserts/jalebi.jpg" alt="Jalebi" class="recipe-image">
+            <div class="recipe-content">
+                <h1 class="recipe-title">Jalebi</h1>
+                <div class="recipe-meta">
+                    <span>Prep Time: 10 mins</span>
+                    <span>Cook Time: 30 mins</span>
+                    <span>Total Time: 40 mins</span>
+                </div>
+                <p class="recipe-description">Jalebi is a classic Indian dessert, known for its crispy and sugary spirals. Perfect for celebrations, this sweet treat is irresistible when served warm or cold.</p>
+                
+                <div class="recipe-section">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list" id="ingredients-list">
+                        <li>1 cup all-purpose flour</li>
+                        <li>2 tablespoons cornstarch</li>
+                        <li>1/2 cup yogurt</li>
+                        <li>1/4 teaspoon baking soda</li>
+                        <li>Water (as needed)</li>
+                        <li>1 cup sugar</li>
+                        <li>1/2 cup water (for syrup)</li>
+                        <li>A pinch of saffron strands</li>
+                        <li>1/4 teaspoon cardamom powder</li>
+                        <li>Ghee or oil for frying</li>
+                    </ul>
+                </div>
+                
+                <div class="recipe-section">
+                    <h2>Instructions</h2>
+                    <ol class="instructions-list">
+                        <li>In a mixing bowl, combine all-purpose flour, cornstarch, and yogurt. Gradually add water to form a smooth, pancake-like batter. Let it rest for 30 minutes.</li>
+                        <li>Prepare the sugar syrup by boiling 1 cup sugar and 1/2 cup water until it reaches one-string consistency. Add saffron strands and cardamom powder. Set aside.</li>
+                        <li>Heat ghee or oil in a deep pan over medium heat.</li>
+                        <li>Fill a piping bag or squeeze bottle with the batter. Pipe the batter into the hot oil in spiral shapes.</li>
+                        <li>Fry the jalebis until golden and crisp. Remove and immediately immerse in warm sugar syrup for 30 seconds. Remove and place on a wire rack.</li>
+                        <li>Serve warm or cold, garnished with a few saffron strands.</li>
+                    </ol>
+                </div>
+
+                <div class="recipe-section">
+                    <h2>Nutrition Information</h2>
+                    <div class="nutrition-info">
+                        <div class="nutrition-item">
+                            <p>Calories</p>
+                            <span>150 kcal</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Protein</p>
+                            <span>2g</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Carbohydrates</p>
+                            <span>25g</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Fat</p>
+                            <span>5g</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="btn" onclick="goBack()">Go Back</button>
+                    <button class="btn" onclick="printPage()">Print Recipe</button>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Indian Food. All rights reserved.</p>
+        <div class="social-icon">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+        </div>
+    </footer>
+
+    <script>
+        function printPage() {
+            window.print();
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

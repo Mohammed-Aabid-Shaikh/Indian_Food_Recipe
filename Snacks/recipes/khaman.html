@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Img/chef2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/recipe.css">
+    <title>Khaman - Indian Snack</title>
+    
+</head>
+<body>
+    <header>
+        <nav class="container">
+            
+            <div class="logo">
+                <img width="60px"  src="../../Img/chef2.png" alt="Indian food">
+                <span>Indian food</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="nav-item">Home</a></li>
+                <li class="dropdown">
+                    <a href="#recipes" class="nav-item">Recipes</a>
+                    <div class="dropdown-content">
+                        <a href="../../vegetarian/vegetarian.html">Vegetarian</a>
+                        <a href="../../Non_Vegetarian/non_vegetarian.html">Non-Vegetarian</a>
+                        <a href="../../Desserts/desserts.html">Desserts</a>
+                        <a href="../../Snacks/snacks.html">Snacks</a>
+                    </div>
+                </li>
+                <li><a href="../../AboutUs.html" class="nav-item">About</a></li>
+                <li><a href="../../contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="recipe-card">
+            <img src="../../Img/Snacks/khaman.jpg" alt="Khaman" class="recipe-image">
+            <div class="recipe-content">
+                <h1 class="recipe-title">Khaman</h1>
+                <div class="recipe-meta">
+                    <span>Prep Time: 10 mins</span>
+                    <span>Cook Time: 20 mins</span>
+                    <span>Total Time: 30 mins</span>
+                </div>
+                <p class="recipe-description">Khaman is a popular Indian snack, typically enjoyed as a breakfast or a tea-time snack. Made from steamed gram flour, it is soft, spongy, and topped with mustard seeds and coriander leaves.</p>
+                
+                <div class="recipe-section">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list" id="ingredients-list">
+                        <li>1 cup besan (gram flour)</li>
+                        <li>1/2 cup yogurt</li>
+                        <li>1/2 teaspoon turmeric powder</li>
+                        <li>1/2 teaspoon ginger paste</li>
+                        <li>1 teaspoon green chili paste</li>
+                        <li>1 teaspoon lemon juice</li>
+                        <li>1 teaspoon sugar</li>
+                        <li>1/2 teaspoon baking soda</li>
+                        <li>Salt to taste</li>
+                        <li>Water (for batter)</li>
+                        <li>2 tablespoons oil (for tempering)</li>
+                        <li>1 teaspoon mustard seeds</li>
+                        <li>1/2 teaspoon cumin seeds</li>
+                        <li>1 green chili, slit</li>
+                        <li>Fresh coriander leaves for garnish</li>
+                    </ul>
+                </div>
+                
+                <div class="recipe-section">
+                    <h2>Instructions</h2>
+                    <ol class="instructions-list">
+                        <li>In a large bowl, mix besan, turmeric, ginger paste, green chili paste, yogurt, sugar, salt, and water to make a smooth batter.</li>
+                        <li>Add baking soda to the batter and mix well.</li>
+                        <li>Grease a steaming tray or a shallow pan, pour the batter into it, and steam it for 15-20 minutes until fully cooked.</li>
+                        <li>Meanwhile, heat oil in a pan for tempering. Add mustard seeds, cumin seeds, and slit green chili, and let them splutter.</li>
+                        <li>Once the khaman is cooked, cut it into small cubes and pour the tempering over it.</li>
+                        <li>Garnish with fresh coriander leaves and serve hot.</li>
+                    </ol>
+                </div>
+
+                <div class="recipe-section">
+                    <h2>Nutrition Information</h2>
+                    <div class="nutrition-info">
+                        <div class="nutrition-item">
+                            <p>Calories</p>
+                            <span>120 kcal</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Protein</p>
+                            <span>5g</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Carbohydrates</p>
+                            <span>25g</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Fat</p>
+                            <span>3g</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="btn" onclick="goBack()">Go Back</button>
+                    <button class="btn" onclick="printPage()">Print Recipe</button>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Indian Food. All rights reserved.</p>
+        <div class="social-icon">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+        </div>
+    </footer>
+
+    <script>
+        function printPage() {
+            window.print();
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

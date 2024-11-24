@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Img/chef2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/recipe.css">
+    <title>Butter Chicken - Indian Food</title>
+    
+</head>
+<body>
+    <header>
+        <nav class="container">
+            
+            <div class="logo">
+                <img width="60px"  src="../../Img/chef2.png" alt="Indian food">
+                <span>Indian food</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="nav-item">Home</a></li>
+                <li class="dropdown">
+                    <a href="#recipes" class="nav-item">Recipes</a>
+                    <div class="dropdown-content">
+                        <a href="../../vegetarian/vegetarian.html">Vegetarian</a>
+                        <a href="../../Non_Vegetarian/non_vegetarian.html">Non-Vegetarian</a>
+                        <a href="../../Desserts/desserts.html">Desserts</a>
+                        <a href="../../Snacks/snacks.html">Snacks</a>
+                    </div>
+                </li>
+                <li><a href="../../AboutUs.html" class="nav-item">About</a></li>
+                <li><a href="../../contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="recipe-card">
+            <img src="../../Img/butter_chicken.jpg" alt="Butter Chicken" class="recipe-image">
+            <div class="recipe-content">
+                <h1 class="recipe-title">Butter Chicken</h1>
+                <div class="recipe-meta">
+                    <span>Prep Time: 30 mins</span>
+                    <span>Cook Time: 45 mins</span>
+                    <span>Total Time: 1 hour 15 mins</span>
+                </div>
+                <p class="recipe-description">Butter Chicken is a rich and creamy dish, known for its flavorful tomato-based gravy and tender chicken pieces. This iconic North Indian dish pairs perfectly with naan or steamed rice.</p>
+                
+                <div class="recipe-section">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list" id="ingredients-list">
+                        <li>500 grams boneless chicken</li>
+                        <li>1 cup yogurt</li>
+                        <li>2 tablespoons ginger-garlic paste</li>
+                        <li>1 teaspoon red chili powder</li>
+                        <li>1 teaspoon turmeric powder</li>
+                        <li>1 teaspoon garam masala</li>
+                        <li>3 medium tomatoes (pureed)</li>
+                        <li>1 cup cream</li>
+                        <li>3 tablespoons butter</li>
+                        <li>1 teaspoon kasuri methi (dried fenugreek leaves)</li>
+                        <li>2 tablespoons oil</li>
+                        <li>Salt to taste</li>
+                        <li>Fresh coriander leaves for garnish</li>
+                    </ul>
+                </div>
+                
+                <div class="recipe-section">
+                    <h2>Instructions</h2>
+                    <ol class="instructions-list">
+                        <li>Marinate the chicken with yogurt, ginger-garlic paste, red chili powder, turmeric, and salt. Let it rest for at least 30 minutes.</li>
+                        <li>Heat oil in a pan and cook the marinated chicken until lightly browned. Set aside.</li>
+                        <li>In the same pan, melt butter and add the tomato puree. Cook until the oil separates.</li>
+                        <li>Add red chili powder, garam masala, and salt. Mix well.</li>
+                        <li>Stir in the cream and cook on low heat for 5 minutes.</li>
+                        <li>Add the cooked chicken and kasuri methi. Simmer for another 10 minutes.</li>
+                        <li>Garnish with fresh coriander leaves before serving.</li>
+                        <li>Serve hot with naan or steamed rice.</li>
+                    </ol>
+                </div>
+
+                <div class="recipe-section">
+                    <h2>Nutrition Information</h2>
+                    <div class="nutrition-info">
+                        <div class="nutrition-item">
+                            <p>Calories</p>
+                            <span>430 kcal</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Protein</p>
+                            <span>35g</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Carbohydrates</p>
+                            <span>10g</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Fat</p>
+                            <span>25g</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="btn" onclick="goBack()">Go Back</button>
+                    <button class="btn" onclick="printPage()">Print Recipe</button>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Indian Food. All rights reserved.</p>
+        <div class="social-icon">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+        </div>
+    </footer>
+
+    <script>
+        function printPage() {
+            window.print();
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

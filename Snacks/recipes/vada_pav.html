@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Img/chef2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/recipe.css">
+    <title>Vada Pav - Indian Snack</title>
+    
+</head>
+<body>
+    <header>
+        <nav class="container">
+            
+            <div class="logo">
+                <img width="60px"  src="../../Img/chef2.png" alt="Indian food">
+                <span>Indian food</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="nav-item">Home</a></li>
+                <li class="dropdown">
+                    <a href="#recipes" class="nav-item">Recipes</a>
+                    <div class="dropdown-content">
+                        <a href="../../vegetarian/vegetarian.html">Vegetarian</a>
+                        <a href="../../Non_Vegetarian/non_vegetarian.html">Non-Vegetarian</a>
+                        <a href="../../Desserts/desserts.html">Desserts</a>
+                        <a href="../../Snacks/snacks.html">Snacks</a>
+                    </div>
+                </li>
+                <li><a href="../../AboutUs.html" class="nav-item">About</a></li>
+                <li><a href="../../contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="recipe-card">
+            <img src="../../Img/Snacks/vada_pav.jpg" alt="Vada Pav" class="recipe-image">
+            <div class="recipe-content">
+                <h1 class="recipe-title">Vada Pav</h1>
+                <div class="recipe-meta">
+                    <span>Prep Time: 15 mins</span>
+                    <span>Cook Time: 20 mins</span>
+                    <span>Total Time: 35 mins</span>
+                </div>
+                <p class="recipe-description">Vada Pav, often called the "Indian burger," is a beloved street food from Mumbai. It features a spiced potato fritter (vada) sandwiched in a soft bun (pav) with chutneys and fried green chilies.</p>
+                
+                <div class="recipe-section">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list" id="ingredients-list">
+                        <li>4 pav buns</li>
+                        <li>2 large potatoes, boiled and mashed</li>
+                        <li>2 green chilies, finely chopped</li>
+                        <li>1/2 teaspoon mustard seeds</li>
+                        <li>1/2 teaspoon turmeric powder</li>
+                        <li>1/2 teaspoon red chili powder</li>
+                        <li>1 tablespoon ginger-garlic paste</li>
+                        <li>2 tablespoons coriander leaves, chopped</li>
+                        <li>1 cup gram flour (besan)</li>
+                        <li>1/2 teaspoon baking soda</li>
+                        <li>Salt to taste</li>
+                        <li>Water (to make batter)</li>
+                        <li>Oil (for deep frying)</li>
+                        <li>Chutneys (green chutney and tamarind chutney)</li>
+                        <li>Fried green chilies for garnish</li>
+                    </ul>
+                </div>
+                
+                <div class="recipe-section">
+                    <h2>Instructions</h2>
+                    <ol class="instructions-list">
+                        <li>Heat oil in a pan and add mustard seeds. Once they splutter, add green chilies, turmeric powder, and mashed potatoes. Mix well.</li>
+                        <li>Add red chili powder, coriander leaves, and salt. Mix thoroughly and let the mixture cool.</li>
+                        <li>Shape the potato mixture into small balls (vada).</li>
+                        <li>In a bowl, mix gram flour, baking soda, salt, and water to form a thick batter.</li>
+                        <li>Dip each potato ball into the batter and deep-fry until golden brown. Drain on paper towels.</li>
+                        <li>Slice the pav buns and spread green chutney on one side and tamarind chutney on the other.</li>
+                        <li>Place a vada inside the bun and garnish with fried green chilies. Serve hot.</li>
+                    </ol>
+                </div>
+
+                <div class="recipe-section">
+                    <h2>Nutrition Information</h2>
+                    <div class="nutrition-info">
+                        <div class="nutrition-item">
+                            <p>Calories</p>
+                            <span>200 kcal</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Protein</p>
+                            <span>4g</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Carbohydrates</p>
+                            <span>30g</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Fat</p>
+                            <span>8g</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="btn" onclick="goBack()">Go Back</button>
+                    <button class="btn" onclick="printPage()">Print Recipe</button>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Indian Food. All rights reserved.</p>
+        <div class="social-icon">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+        </div>
+    </footer>
+
+    <script>
+        function printPage() {
+            window.print();
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

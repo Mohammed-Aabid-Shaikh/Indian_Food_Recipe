@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Img/chef2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/recipe.css">
+    <title>Chicken Bhuna Masala - Indian Food</title>
+    
+</head>
+<body>
+    <header>
+        <nav class="container">
+            
+            <div class="logo">
+                <img width="60px"  src="../../Img/chef2.png" alt="Indian food">
+                <span>Indian food</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="nav-item">Home</a></li>
+                <li class="dropdown">
+                    <a href="#recipes" class="nav-item">Recipes</a>
+                    <div class="dropdown-content">
+                        <a href="../../vegetarian/vegetarian.html">Vegetarian</a>
+                        <a href="../../Non_Vegetarian/non_vegetarian.html">Non-Vegetarian</a>
+                        <a href="../../Desserts/desserts.html">Desserts</a>
+                        <a href="../../Snacks/snacks.html">Snacks</a>
+                    </div>
+                </li>
+                <li><a href="../../AboutUs.html" class="nav-item">About</a></li>
+                <li><a href="../../contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="recipe-card">
+            <img src="../../Img/Non_veg/chicken_bhuna_masala.jpg" alt="Chicken Bhuna Masala" class="recipe-image">
+            <div class="recipe-content">
+                <h1 class="recipe-title">Chicken Bhuna Masala</h1>
+                <div class="recipe-meta">
+                    <span>Prep Time: 20 mins</span>
+                    <span>Cook Time: 40 mins</span>
+                    <span>Total Time: 1 hour</span>
+                </div>
+                <p class="recipe-description">Chicken Bhuna Masala is a classic Indian dish known for its rich, thick gravy made by slow-cooking chicken with aromatic spices. Best paired with naan or jeera rice!</p>
+                
+                <div class="recipe-section">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list" id="ingredients-list">
+                        <li>500 grams chicken (bone-in or boneless)</li>
+                        <li>2 large onions (finely chopped)</li>
+                        <li>3 medium tomatoes (pureed)</li>
+                        <li>1/2 cup yogurt</li>
+                        <li>2 tablespoons ginger-garlic paste</li>
+                        <li>1 teaspoon turmeric powder</li>
+                        <li>2 teaspoons red chili powder</li>
+                        <li>2 teaspoons coriander powder</li>
+                        <li>1 teaspoon cumin powder</li>
+                        <li>1 teaspoon garam masala</li>
+                        <li>3 tablespoons oil or ghee</li>
+                        <li>Whole spices (bay leaf, cinnamon, cloves, green cardamom)</li>
+                        <li>Salt to taste</li>
+                        <li>Fresh coriander leaves (for garnish)</li>
+                    </ul>
+                </div>
+                
+                <div class="recipe-section">
+                    <h2>Instructions</h2>
+                    <ol class="instructions-list">
+                        <li>Heat oil in a heavy-bottomed pan. Add whole spices and sauté until fragrant.</li>
+                        <li>Add chopped onions and cook until golden brown.</li>
+                        <li>Stir in ginger-garlic paste and sauté for a minute.</li>
+                        <li>Add chicken pieces and cook until lightly browned.</li>
+                        <li>Add turmeric, red chili powder, coriander powder, cumin powder, and salt. Mix well.</li>
+                        <li>Pour in tomato puree and cook until the oil separates from the masala.</li>
+                        <li>Reduce the heat, add yogurt, and cook while stirring continuously for 5 minutes.</li>
+                        <li>Cover and simmer on low heat until the chicken is cooked and the gravy thickens.</li>
+                        <li>Sprinkle garam masala and garnish with fresh coriander leaves before serving.</li>
+                        <li>Serve hot with naan, paratha, or steamed rice.</li>
+                    </ol>
+                </div>
+
+                <div class="recipe-section">
+                    <h2>Nutrition Information</h2>
+                    <div class="nutrition-info">
+                        <div class="nutrition-item">
+                            <p>Calories</p>
+                            <span>350 kcal</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Protein</p>
+                            <span>28g</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Carbohydrates</p>
+                            <span>10g</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Fat</p>
+                            <span>18g</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="btn" onclick="goBack()">Go Back</button>
+                    <button class="btn" onclick="printPage()">Print Recipe</button>
+                </div>
+            </div>
+        </article>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Indian Food. All rights reserved.</p>
+        <div class="social-icon">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+        </div>
+    </footer>
+
+    <script>
+        function printPage() {
+            window.print();
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Img/chef2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/recipe.css">
+    <title>Madras Lamb Curry - Indian Food</title>
+    
+</head>
+<body>
+    <header>
+        <nav class="container">
+            
+            <div class="logo">
+                <img width="60px"  src="../../Img/chef2.png" alt="Indian food">
+                <span>Indian food</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="nav-item">Home</a></li>
+                <li class="dropdown">
+                    <a href="#recipes" class="nav-item">Recipes</a>
+                    <div class="dropdown-content">
+                        <a href="../../vegetarian/vegetarian.html">Vegetarian</a>
+                        <a href="../../Non_Vegetarian/non_vegetarian.html">Non-Vegetarian</a>
+                        <a href="../../Desserts/desserts.html">Desserts</a>
+                        <a href="../../Snacks/snacks.html">Snacks</a>
+                    </div>
+                </li>
+                <li><a href="../../AboutUs.html" class="nav-item">About</a></li>
+                <li><a href="../../contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="recipe-card">
+            <img src="../../Img/Non_veg/madras_lamb_curry.jpeg" alt="Madras Lamb Curry" class="recipe-image">
+            <div class="recipe-content">
+                <h1 class="recipe-title">Madras Lamb Curry</h1>
+                <div class="recipe-meta">
+                    <span>Prep Time: 30 mins</span>
+                    <span>Cook Time: 1 hour 15 mins</span>
+                    <span>Total Time: 1 hour 45 mins</span>
+                </div>
+                <p class="recipe-description">Madras Lamb Curry is a fiery South Indian dish, bursting with bold flavors from aromatic spices and tender lamb cooked to perfection. Enjoy it with steamed rice or buttery naan!</p>
+                
+                <div class="recipe-section">
+                    <h2>Ingredients</h2>
+                    <ul class="ingredients-list" id="ingredients-list">
+                        <li>500 grams lamb (cut into cubes)</li>
+                        <li>2 large onions (finely chopped)</li>
+                        <li>3 medium tomatoes (pureed)</li>
+                        <li>2 tablespoons ginger-garlic paste</li>
+                        <li>1 teaspoon turmeric powder</li>
+                        <li>2 teaspoons red chili powder</li>
+                        <li>2 teaspoons coriander powder</li>
+                        <li>1 teaspoon cumin powder</li>
+                        <li>1 teaspoon garam masala</li>
+                        <li>3 tablespoons oil or ghee</li>
+                        <li>1 cup coconut milk</li>
+                        <li>Whole spices (bay leaf, cinnamon, cloves, green cardamom)</li>
+                        <li>Salt to taste</li>
+                        <li>Fresh curry leaves (optional)</li>
+                    </ul>
+                </div>
+                
+                <div class="recipe-section">
+                    <h2>Instructions</h2>
+                    <ol class="instructions-list">
+                        <li>Heat oil in a heavy-bottomed pan. Add whole spices and sauté until fragrant.</li>
+                        <li>Add chopped onions and cook until golden brown.</li>
+                        <li>Stir in ginger-garlic paste and sauté for a minute.</li>
+                        <li>Add lamb pieces and cook until browned.</li>
+                        <li>Add turmeric, red chili powder, coriander powder, cumin powder, and salt. Mix well.</li>
+                        <li>Pour in tomato puree and cook until the oil separates from the masala.</li>
+                        <li>Add coconut milk and bring to a boil.</li>
+                        <li>Reduce the heat, cover, and simmer for 1 hour or until the lamb is tender.</li>
+                        <li>Sprinkle garam masala and garnish with fresh curry leaves before serving.</li>
+                        <li>Serve hot with naan, paratha, or steamed rice.</li>
+                    </ol>
+                </div>
+
+                <div class="recipe-section">
+                    <h2>Nutrition Information</h2>
+                    <div class="nutrition-info">
+                        <div class="nutrition-item">
+                            <p>Calories</p>
+                            <span>400 kcal</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Protein</p>
+                            <span>35g</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Carbohydrates</p>
+                            <span>12g</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Fat</p>
+                            <span>22g</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="btn" onclick="goBack()">Go Back</button>
+                    <button class="btn" onclick="printPage()">Print Recipe</button>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Indian Food. All rights reserved.</p>
+        <div class="social-icon">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+        </div>
+    </footer>
+
+    <script>
+        function printPage() {
+            window.print();
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

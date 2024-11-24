@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Img/chef2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/recipe.css">
+    <title>Dal Tadka - Indian Food</title>
+    
+</head>
+<body>
+    <header>
+        <nav class="container">
+            
+            <div class="logo">
+                <img width="60px"  src="../../Img/chef2.png" alt="Indian food">
+                <span>Indian food</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="nav-item">Home</a></li>
+                <li class="dropdown">
+                    <a href="#recipes" class="nav-item">Recipes</a>
+                    <div class="dropdown-content">
+                        <a href="../../vegetarian/vegetarian.html">Vegetarian</a>
+                        <a href="../../Non_Vegetarian/non_vegetarian.html">Non-Vegetarian</a>
+                        <a href="../../Desserts/desserts.html">Desserts</a>
+                        <a href="../../Snacks/snacks.html">Snacks</a>
+                    </div>
+                </li>
+                <li><a href="../../AboutUs.html" class="nav-item">About</a></li>
+                <li><a href="../../contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="recipe-card">
+            <img src="../../Img/veg/dal_tadka.jpg" alt="Dal Tadka" class="recipe-image">
+            <div class="recipe-content">
+                <h1 class="recipe-title">Dal Tadka</h1>
+                <div class="recipe-meta">
+                    <span>Prep Time: 40 mins</span>
+                    <span>Cook Time: 20 mins</span>
+                    <span>Total Time: 1 hour</span>
+                </div>
+                <p class="recipe-description">This delicious dal and some steamed rice are all you need to make to enjoy a delicious comforting meal.</p>
+                
+                <div class="recipe-section">
+                    <h2>Ingredients</h2>
+                    <!-- <div id="servings-control">
+                        <button id="decrease-servings">-</button>
+                        <span id="servings-display">4 servings</span>
+                        <button id="increase-servings">+</button>
+                    </div> -->
+                    <ul class="ingredients-list" id="ingredients-list">
+                        <li><span class="quantity">1/2 cup Split</span> pigeon pea (toor dal/arhar dal) soaked, drained and boiled with enough water and turmeric powder</li>
+                        <li><span class="quantity">1/2 cup Split</span> Bengal gram (chana dal) soaked, drained and boiled with enough water and turmeric powder</li>
+                        <li><span class="quantity">2 tablespoons</span> Ghee</li>
+                        <li><span class="quantity">1 teaspoon</span> Cumin seeds
+                        </li>
+                        <li><span class="quantity"></span>a pinch Asafoetida.</li>
+                        <li><span class="quantity">1 inch</span> Garlic cloves choppad</li>
+                        <li><span class="quantity">1 inch</span> piece Ginger chopped</li>
+                        <li><span class="quantity">2 medium</span> Onions chopped</li>
+                        <li><span class="quantity"></span>to taste Salt</li>
+                        <li><span class="quantity">2 medium</span> Tomatoes chopped</li>
+                        <li><span class="quantity">1 teaspoon</span> Red chilli powder</li>
+                        <li><span class="quantity">1/4 teaspoon</span> Turmeric powder</li>
+                        <li><span class="quantity">1/4 teaspoon</span> Cumin powder</li>
+                        <li><span class="quantity">1/2 teaspoon</span> Coriander powder</li>
+                        <li><span class="quantity">1/2 teaspoon</span> Garam masala powder</li>
+                        <li><span class="quantity"></span>Juice of 1 lemon</li>
+                        <li><span class="quantity">1 tablespoon</span> Fresh coriander leaves chopped</li>
+                    </ul>
+                </div>
+
+                <div class="recipe-section">
+                    <h2>Instructions</h2>
+                    <ol class="instructions-list">
+                        <li>Heat ghee in a non-stick pan and add cumin seeds. Once they change colour, add asafetida and mix.</li>
+                        <li>Add garlic and ginger and sauté on medium heat for a minute. Add onions and a pinch of salt and sauté till the onions turn golden brown.</li>
+                        <li>Add tomatoes and sauté till they turn pulpy.</li>
+                        <li>Add red chilli powder, turmeric powder, cumin powder, coriander powder andgaram masala powder and mix well. Cook for a minute and add the cooked grams and salt. Mix well.</li>
+                        <li>Add water if required and bring to a boil.</li>
+                        <li>Add lemon juice and remove from heat.</li>
+                        <li>Transfer into a serving bowl, garnish with corianderleaves and serve hot.</li>
+                    </ol>
+                </div>
+
+                <div class="recipe-section">
+                    <h2>Nutrition Information</h2>
+                    <div class="nutrition-info">
+                        <div class="nutrition-item">
+                            <p>Calories</p>
+                            <span>1107</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Protein</p>
+                            <span>48</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Carbohydrates</p>
+                            <span>140.7</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <p>Fat</p>
+                            <span>39.2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="btn" onclick="goBack()" id="print-recipe">Go Back</button>
+                    <button class="btn" onclick="printPage()" id="print-recipe">Print Recipe</button>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Indian Delights. All rights reserved.</p>
+            <div class="social-icon">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for adjusting servings
+        const decreaseBtn = document.getElementById('decrease-servings');
+        const increaseBtn = document.getElementById('increase-servings');
+        const servingsDisplay = document.getElementById('servings-display');
+        const ingredientsList = document.getElementById('ingredients-list');
+        let servings = 4;
+
+        // Function to print the page
+        function printPage() {
+            window.print();
+        }
+
+        // Function to navigate back
+        function goBack() {
+            window.history.back();
+        }
+
+        // Print recipe functionality
+        document.getElementsById('print-recipe').addEventListener('click', () => {
+            window.print();
+        });
+
+        function updateServings(change) {
+            servings += change;
+            if (servings < 1) servings = 1;
+            servingsDisplay.textContent = `${servings} servings`;
+            updateIngredients();
+        }
+
+        function updateIngredients() {
+            const quantities = ingredientsList.querySelectorAll('.quantity');
+            quantities.forEach(quantity => {
+                const originalValue = parseFloat(quantity.getAttribute('data-original'));
+                const newValue = (originalValue * servings / 4).toFixed(2);
+                quantity.textContent = newValue % 1 === 0 ? Math.floor(newValue) : newValue;
+            });
+        }
+
+        decreaseBtn.addEventListener('click', () => updateServings(-1));
+        increaseBtn.addEventListener('click', () => updateServings(1));
+
+        // Store original ingredient quantities
+        document.querySelectorAll('.quantity').forEach(quantity => {
+            quantity.setAttribute('data-original', parseFloat(quantity.textContent));
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Img/chef2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Indian Food - Recipes</title>
+    <style>
+        .hero
+        {
+            background-image: url('./Img/Indian_food.jpg');
+        }
+    </style>
+</head>
+
+<body >
+    <header>
+        <nav class="container">
+
+            <div class="logo">
+                <img width="60px" src="./Img/chef2.png" alt="Indian food">
+                <span>Indian food</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html" class="nav-item">Home</a></li>
+                <li class="dropdown">
+                    <a href="#recipes" class="nav-item">Recipes</a>
+                    <div class="dropdown-content">
+                        <a href="./vegetarian/vegetarian.html">Vegetarian</a>
+                        <a href="./Non_Vegetarian/non_vegetarian.html">Non-Vegetarian</a>
+                        <a href="./Desserts/desserts.html">Desserts</a>
+                        <a href="./Snacks/snacks.html">Snacks</a>
+                    </div>
+                </li>
+                <li><a href="./AboutUs.html" class="nav-item">About</a></li>
+                <li><a href="./contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Discover the Flavors of India</h1>
+                    <p>Explore authentic Indian recipes and embark on a culinary journey</p>
+                    <div class="search-container">
+                        <input class="search" id="search-input" autocomplete="off" type="text" oninput="showSuggestions()" placeholder="Search....">
+                        <a href="#recipes" id="search-input" onclick="" class="btn">search</a>
+                        <div id="suggestions-list" class="suggestions-list" ></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categories">
+                <div class="container">
+                    <h2 class="section-title">Recipe Categories</h2>
+                    <div class="category-grid">
+                        <div class="category-card">
+                            <img src="./Img/Vegetarian.jpg" alt="Vegetarian">
+                            <div class="category-content">
+                                <h3 class="category-title">Vegetarian</h3>
+                                <p>Delicious meat-free Indian dishes</p>
+                            </div>
+                        </div>
+                        <div class="category-card">
+                            <img src="./Img/Non_Vegetarian.jpg" alt="Non-Vegetarian">
+                            <div class="category-content">
+                                <h3 class="category-title">Non-Vegetarian</h3>
+                                <p>Flavorful meat-based recipes</p>
+                            </div>
+                        </div>
+                        <div class="category-card">
+                            <img src="./Img/Desserts.jpg" alt="Desserts">
+                            <div class="category-content">
+                                <h3 class="category-title">Desserts</h3>
+                                <p>Sweet treats from India</p>
+                            </div>
+                        </div>
+                        <div class="category-card">
+                            <img src="./Img/Snacks.jpg" alt="Snacks">
+                            <div class="category-content">
+                                <h3 class="category-title">Snacks</h3>
+                                <p>Tasty bites and appetizers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-recipes">
+                <div class="container">
+                    <h2 class="section-title">Featured Recipes</h2>
+                    <div class="recipes-grid">
+                        <div class="recipe-card">
+                            <img src="./Img/Butter_Chicken.jpg" alt="Butter Chicken">
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Butter Chicken</h3>
+                                <p class="recipe-description">Creamy and flavorful chicken curry in a rich tomato-based
+                                    sauce.</p>
+
+                                <div>
+                                    <a href="./Non_Vegetarian/recipes/butter_chicken.html" class="btn"
+                                        data-recipe="butter-chicken">View Recipe</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recipe-card">
+                            <img src="./Img/Palak_Paneer.jpg" alt="Palak Paneer">
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Palak Paneer</h3>
+                                <p class="recipe-description">Spinach and cottage cheese curry, a vegetarian delight.
+                                </p>
+                                <br>
+                                <div>
+                                    <a href="./vegetarian/recipes/palak_paneer.html" class="btn"
+                                        data-recipe="butter-chicken">View Recipe</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recipe-card">
+                            <img src="./Img/Chicken_Biryani.jpg" alt="Chicken Biryani">
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Chicken Biryani</h3>
+                                <p class="recipe-description">Aromatic rice dish with tender chicken and fragrant
+                                    spices.</p>
+                                <br>
+                                <div>
+                                    <a href="./Non_Vegetarian/recipes/chicken _biryani.html" class="btn"
+                                        data-recipe="butter-chicken">View Recipe</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recipe-card">
+                            <img src="./Img/Samosas.jpeg" alt="Samosas">
+                            <div class="recipe-content">
+                                <h3 class="recipe-title">Samosas</h3>
+                                <p class="recipe-description">Crispy pastry filled with spiced potatoes and peas.</p>
+                                <br>
+                                <div>
+                                    <a href="./Snacks/recipes/samosa.html" class="btn" data-recipe="butter-chicken">View
+                                        Recipe</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contact" class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Join Our Culinary Community</h2>
+                    <p>Sign up for our newsletter to receive the latest recipes, cooking tips, and exclusive content.
+                    </p>
+                    <a href="./contact.html" class="btn" id="newsletter-btn">Subscribe Now</a>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Indian food. All rights reserved.</p>
+            <div class="social-icon">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for smooth scrolling and page navigation
+
+
+        // JavaScript for parallax effect on hero section
+        window.addEventListener('scroll', function () {
+            const parallax = document.querySelector('.hero');
+            let scrollPosition = window.pageYOffset;
+            parallax.style.backgroundPositionY = scrollPosition * 0.7 + 'px';
+        });
+
+        // JavaScript for recipe card hover effect
+
+
+ 
+    </script>
+    <script src="./Js/Search.js"></script>
+</body>
+
+</html>
